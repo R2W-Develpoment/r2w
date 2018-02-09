@@ -37,12 +37,19 @@ html, body {
     border-color: #001f5b;    
 }
 
-.nav.navbar-nav.navbar-right li a {
+.nav.navbar-nav.navbar-center li a {
     color: white;   
 }
 
-.navbar-default .navbar-brand {
-  color: white;
+.nav.navbar-nav.navbar-center li a:hover {
+    color: black;  
+    background-color: #CCC; 
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
 /* additional sections */
