@@ -61,6 +61,10 @@ html, body {
   height: auto;
 }
 
+.image-fixed-r2w {
+  max-width: 25%;
+  height: auto;
+}
 
 /* additional sections */
 #home {
