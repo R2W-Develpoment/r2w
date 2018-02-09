@@ -28,7 +28,7 @@ html, body {
 }
 
 .btn {
-  max-width:150px;
+  max-width: 200px;
   width:100%;
 }
 
@@ -62,8 +62,18 @@ html, body {
 }
 
 .image-fixed-r2w {
-  max-width: 25%;
-  height: auto;
+  max-width: 200px;   
+  width: 100%;
+}
+
+.navbar-default .navbar-toggle {
+  float: left;
+  margin-left: 10px;
+  border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
 }
 
 /* additional sections */
