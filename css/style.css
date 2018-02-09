@@ -22,6 +22,16 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.button-wrapper {
+  margin-bottom: 5px;
+}
+
+.btn {
+  max-width:150px;
+  width:100%;
+}
+
 /* additional sections */
 #home {
   background: url(../images/parallax1.png) no-repeat center center fixed;
@@ -34,23 +44,7 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-/*#about {
-}*/
-/*#services {
-  background-color: #306d9f;
-  color: #ffffff;
-}
-#services .glyphicon {
-  border: 2px solid #FFFFFF;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 60px;
-  height: 140px;
-  line-height: 140px;
-  text-align: center;
-  vertical-align: middle;
-  width: 140px;
-}*/
+
 #simplify {
   background: url(../images/parallax2.png) no-repeat center center fixed;
   display: table;
