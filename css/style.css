@@ -46,11 +46,16 @@ html, body {
     background-color: #CCC; 
 }
 
-.navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 
 /* additional sections */
 #home {
