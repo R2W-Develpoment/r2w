@@ -76,6 +76,32 @@ html, body {
   background-color: white;
 }
 
+/*Center Ready to Win text*/
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+.navbar-toggle {
+    z-index:3;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
+}
+
+.navbar-default .navbar-brand:visited {
+  color: white;
+}
+
 /* additional sections */
 #home {
   background: url(../images/parallax1.png) no-repeat center center fixed;
