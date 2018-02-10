@@ -1,4 +1,15 @@
 /* general styles */
+
+@font-face {
+  font-family: TradeGothic-18-Condensed;
+  src: url(fonts/TradeGothic-18-Condensed.ttf);
+}
+
+@font-face {
+  font-family: TradeGothic;
+  src: url(fonts/TradeGothic.ttf);
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -32,13 +43,20 @@ html, body {
   width:100%;
 }
 
+.btn-default {
+  font-family: TradeGothic;  
+  font-weight: bold; 
+}
+
 .navbar-default{
     background-color: #001f5b;
     border-color: #001f5b;    
 }
 
 .nav.navbar-nav.navbar-center li a {
-    color: white;   
+    color: white;
+    font-family: TradeGothic-18-Condensed;  
+    font-weight: bold; 
 }
 
 .nav.navbar-nav.navbar-center li a:hover {
