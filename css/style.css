@@ -1,8 +1,8 @@
 /* general styles */
 
 @font-face {
-  font-family: TradeGothic-18-Condensed;
-  src: url(fonts/TradeGothic-18-Condensed.ttf);
+  font-family: TradeGothic-Bold-Condensed;
+  src: url(fonts/TradeGothic-Bold-Condensed.ttf);
 }
 
 @font-face {
@@ -10,9 +10,15 @@
   src: url(fonts/TradeGothic.ttf);
 }
 
+@font-face {
+  font-family: TradeGothic-Bold;
+  src: url(fonts/TradeGothic-Bold.ttf);
+}
+
 html, body {
   height: 100%;
   width: 100%;
+  font-family: TradeGothic;
 }
 /* padded section */
 .pad-section {
@@ -44,8 +50,14 @@ html, body {
 }
 
 .btn-default {
-  font-family: TradeGothic;  
+  font-family: TradeGothic-Bold;  
   font-weight: bold; 
+}
+
+.button-custom {
+  margin-bottom: 10px;
+  max-width: 150px;
+  width:100%;
 }
 
 .navbar-default{
@@ -55,8 +67,7 @@ html, body {
 
 .nav.navbar-nav.navbar-center li a {
     color: white;
-    font-family: TradeGothic-18-Condensed;  
-    font-weight: bold; 
+    font-family: TradeGothic-Bold;      
 }
 
 .nav.navbar-nav.navbar-center li a:hover {
@@ -96,7 +107,7 @@ html, body {
   background-color: white;
 }
 
-/*Center Ready to Win text*/
+/*Center Ready to Win text in header*/
 .navbar-brand {
     position: absolute;
     width: 100%;
@@ -122,17 +133,21 @@ html, body {
   color: white;
 }
 
-/* additional sections */
 #home {
   background: url(../images/parallax1.png) no-repeat center center fixed;
   display: table;
-  height: 100%;
+  height: 800px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 1000;
+}
+
+#home .panel {
+  opacity: 0.85;
 }
 
 #simplify {
@@ -145,6 +160,7 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 1000;
 }
 #simplify .panel {
   opacity: 0.85;
@@ -160,6 +176,7 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 1000;
 }
 #enable .panel {
   opacity: 0.85;
@@ -175,6 +192,7 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 1000;
 }
 #leverage .panel {
   opacity: 0.85;
@@ -190,6 +208,7 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 1000;
 }
 #resource .panel {
   opacity: 0.85;
@@ -205,4 +224,40 @@ footer {
         background-attachment: scroll;
     }
 }
+
+
+#floating-buttons { 
+  /*height: 104px; 
+  width: 104px; */
+  padding-left: 25px;  
+  position: fixed; 
+  top: 40%; 
+  z-index: 999;
+  /*transform: rotate(-90deg);*/
+/*  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
+  -o-transform: rotate(-90deg); */
+  /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+}
+
+#floating-buttons a { 
+/*  display: block; 
+  background: #f00; 
+   
+  width: 70px; 
+  padding: 8px 16px;
+  color: #fff; 
+  font-family: Arial, sans-serif; 
+  font-size: 17px; 
+  font-weight: bold; 
+  text-decoration: none; 
+  border-bottom: solid 1px #333;
+  border-left: solid 1px #333;
+  border-right: solid 1px #fff;*/
+}
+
+#floating-buttons a:hover { 
+  /*background: #06c; */
+}
+
 
