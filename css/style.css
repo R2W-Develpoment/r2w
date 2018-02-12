@@ -147,7 +147,7 @@ html, body {
 #simplify {
   background: url(../images/parallax2.png) no-repeat center center fixed;
   display: table;
-  height: 800px;
+  height: 600px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -163,7 +163,7 @@ html, body {
 #enable {
   background: url(../images/parallax3.png) no-repeat center center fixed;
   display: table;
-  height: 800px;
+  height: 600px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -179,7 +179,7 @@ html, body {
 #leverage {
   background: url(../images/parallax4.png) no-repeat center center fixed;
   display: table;
-  height: 800px;
+  height: 600px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -195,7 +195,7 @@ html, body {
 #resource {
   background: url(../images/parallax5.png) no-repeat center center fixed;
   display: table;
-  height: 800px;
+  height: 600px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -254,12 +254,19 @@ h3 {
     position: absolute;
     color: white;
     left: 50%;
-    top: 84%;
+    top: 74%;
     height: 50px;
     width: 300px;
     margin-left: -150px;
     margin-top: -25px;
 }
+.arrow {
+    position: absolute;
+    bottom: 16%;
+    left: 49.5%;
+    margin-left: -15px;
+}
+
 .arrow img {
     width: 50px;
     height: 50px;
@@ -275,6 +282,7 @@ h3 {
 
 .navbar {
     background-color: #001f5b !important;
+    opacity: 0.8;
 }
 .nav li:hover {
     color: #000!important;
@@ -297,13 +305,15 @@ h3 {
 }
 .navbar-default .navbar-nav>li>a, .navbar-header a {
     color: #fff;
-    font: bold 16px "TradeGothic-Bold", Arial, sans-serif;
+    font: 16px "TradeGothic", Arial, sans-serif;
+    padding: 15px 20px;
 }
 .navbar-brand a {
     color: #fff !important;
 }
 .btn {
     max-width:300px;
+    min-width: 160px;
     width:100%;
     opacity: 0.60;
     background: #2f4a53;
@@ -315,29 +325,36 @@ h3 {
     color: #fff;
 }
 
-.arrow {
-    position: absolute;
-    bottom: 7%;
-    left: 49.5%;
-    margin-left: -15px;
+#toTheTop {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
 
+#toTheTopText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    left: 85px;
+}
+
+#toTheTop:hover #toTheTopText{
+    visibility: visible;
+}
 /* BOUNCY DOWN ARROW */
-.arrow {
-    position: absolute;
-    left: 49.5%;
-    margin-left: -15px;
-    bottom: 7%;
-}
-
-.opacity, .hover-opacity:hover {
-    opacity: 0.60;
-}
 
 .bounce {
     -moz-animation: bounce 2s infinite;
     /* -webkit-animation: bounce 2s infinite; */
-    animation: bounce 5s infinite;
+    animation: bounce 2s infinite;
 }
 
 @-moz-keyframes bounce {
@@ -393,7 +410,6 @@ h3 {
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
     }
-}
 
 .button-custom {
   margin-bottom: 10px;

@@ -1,3 +1,33 @@
 $( document ).ready(function() {
-    $(".navbar-brand").css("color", "#fff");
+    // For "Ready to Win"" title in the mobile view and I had to use jquery css to overwrite styling
+    $(".navbar-brand").css({
+        "color": "#fff",
+        "font-size": "26px",
+        "line-height": "24px"
+    });
+
+    // Brings back to the top of the page when to the top link is clicked
+    $('#toTheTop').click(function(){
+        jQuery('html, body').animate({scrollTop: '0px'}, 1000);
+        return false;
+    });
+
+    /* Hide side buttons initially */
+    $("#floating-buttons").css("display","none");
+
+    /* Detect scroll action and hide side buttons until scrolled down using z-index */
+    $(window).scroll(function() {
+
+        /* find how much is being scrolled down  */
+        var currentHeight = $(window).scrollTop();
+
+        /* once scrolled down enough, display side buttons and hide them when scrolled up using z-index */
+        if(currentHeight > 480) {
+            $("#floating-buttons").css("display","block");
+            $("#floating-buttons").css("z-index","9999999");
+        }else {
+            $("#floating-buttons").css("display","none");
+            $("#floating-buttons").css("z-index","999");
+        }
+    });
 });
