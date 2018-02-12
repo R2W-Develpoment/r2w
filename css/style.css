@@ -61,7 +61,7 @@ html, body {
 
 .nav.navbar-nav.navbar-center li a {
     color: white;
-    font-family: TradeGothic-Bold;      
+    font-family: TradeGothic;      
 }
 
 .nav.navbar-nav.navbar-center li a:hover {
@@ -104,18 +104,18 @@ html, body {
  }
 
 .blue-focus {
-  color: #001f5b;
+  color: #0039A7;
   font-weight: bold;
   font-size: 150%;
 }
 
 .blue-bullets {
-  color: #001f5b;  
+  color: #0039A7;  
   font-size: 150%;
 }
 
 .blue-text {
-  color: #001f5b;
+  color: #0039A7;
 }
 
 /*Center Ready to Win text in header*/
@@ -226,8 +226,46 @@ html, body {
 }
 
 footer {
-  padding: 20px 0;
+  /*padding: 20px 0;*/
+  padding-bottom: 25px;
+  background-color: #001f5b;
+  opacity: 0.9;
+
 }
+
+footer a {
+  color: white;
+}
+
+footer a:visited {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer a:active {
+  color: white;
+}
+
+
+/*Border code to display dashed lines*/
+.border-container {
+  /*position: relative;*/
+  height: 5px;
+}
+.border-container .line {
+  /*position: absolute;*/
+  /*top: 205px;*/
+  /*left: 0;*/
+  width: 100%;
+  height: 35%;
+  background-image: linear-gradient(to right, transparent 50%, #0039A7 50%);
+  background-size: 20px 100%;  
+}
+
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
@@ -322,13 +360,14 @@ h3 {
     color: #fff !important;
 }
 .btn {
-    max-width:300px;
+    max-width:200px;
     min-width: 160px;
     width:100%;
     opacity: 0.60;
     background: #2f4a53;
     color: #fff;
     margin-bottom: 10px;
+    border-width: 2px
 }
 .btn:hover {
     background: #001f5b;
@@ -338,7 +377,7 @@ h3 {
 #toTheTop {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
+    /*border-bottom: 1px dotted black;*/
 }
 
 #toTheTopText {
