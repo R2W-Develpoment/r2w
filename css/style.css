@@ -82,8 +82,6 @@ html, body {
 .image-fixed {
   max-width: 600px;
   width: auto;
-
-  /*height: auto;*/
 }
 
 .image-fixed-r2w {
@@ -99,6 +97,25 @@ html, body {
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
+}
+
+ p {
+  font-size: 150%;
+ }
+
+.blue-focus {
+  color: #001f5b;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.blue-bullets {
+  color: #001f5b;  
+  font-size: 150%;
+}
+
+.blue-text {
+  color: #001f5b;
 }
 
 /*Center Ready to Win text in header*/
@@ -220,17 +237,10 @@ footer {
 }
 
 #floating-buttons { 
-  /*height: 104px; 
-  width: 104px; */
   padding-left: 25px;  
   position: fixed; 
   top: 40%; 
   z-index: 999;
-  /*transform: rotate(-90deg);*/
-/*  -webkit-transform: rotate(-90deg); 
-  -moz-transform: rotate(-90deg); 
-  -o-transform: rotate(-90deg); */
-  /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 }
 
 /****************** Added by GSM1 Song  ***********************/
