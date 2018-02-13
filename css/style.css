@@ -61,7 +61,7 @@ html, body {
 
 .nav.navbar-nav.navbar-center li a {
     color: white;
-    font-family: TradeGothic;
+    font-family: TradeGothic, Arial, sans-serif;
 }
 
 .nav.navbar-nav.navbar-center li a:hover {
