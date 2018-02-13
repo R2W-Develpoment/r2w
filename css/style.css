@@ -253,25 +253,25 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: #FFD700;
 }
 
 footer a:visited {
-    color: white;
+    color: #FFD700;
 }
 
 footer a:hover {
-    color: white;
+    color: #FFD700;
 }
 
 footer a:active {
-    color: white;
+    color: #FFD700;
 }
 
 
 /*Border code to display dashed lines*/
 .border-container {
-    height: 5px;
+    height: 10px;
 }
 .border-container .line {
     /*position: absolute;*/
@@ -280,7 +280,7 @@ footer a:active {
     width: 100%;
     height: 35%;
     background-image: linear-gradient(to right, transparent 50%, #0039A7 50%);
-    background-size: 20px 100%;
+    background-size: 7.5px 100%;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -484,3 +484,4 @@ h3 {
     max-width: 150px;
     width:100%;
 }
+
