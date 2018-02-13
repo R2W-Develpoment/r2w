@@ -1,121 +1,131 @@
 /* general styles */
 
 @font-face {
-  font-family: TradeGothic-Bold-Condensed;
-  src: url(fonts/TradeGothic-Bold-Condensed.ttf);
+    font-family: TradeGothic-Bold-Condensed;
+    src: url(fonts/TradeGothic-Bold-Condensed.ttf);
 }
 
 @font-face {
-  font-family: TradeGothic;
-  src: url(fonts/TradeGothic.ttf);
+    font-family: TradeGothic;
+    src: url(fonts/TradeGothic.ttf);
 }
 
 @font-face {
-  font-family: TradeGothic-Bold;
-  src: url(fonts/TradeGothic-Bold.ttf);
+    font-family: TradeGothic-Bold;
+    src: url(fonts/TradeGothic-Bold.ttf);
 }
 
 html, body {
-  height: 100%;
-  width: 100%;
-  font-family: TradeGothic, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    font-family: TradeGothic, Arial, sans-serif;
 }
 /* padded section */
 .pad-section {
-  padding: 50px 0;
+    padding: 50px 0;
 }
 .pad-section img {
-  width: 100%;
+    width: 100%;
 }
 /* vertical-centered text */
 .text-vcenter {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 .text-vcenter h1 {
-  font-size: 4.5em;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 .button-wrapper {
-  /*margin-bottom: 5px;*/
+    /*margin-bottom: 5px;*/
 }
 
 .btn {
-  max-width: 200px;
-  width:100%;
+    max-width: 200px;
+    width:100%;
 }
 
 .btn-default {
-  font-family: TradeGothic-Bold-Condensed, Arial, sans-serif;  
-  font-weight: bold; 
+    font-family: TradeGothic-Bold-Condensed, Arial, sans-serif;
+    font-weight: bold;
 }
 
 .navbar-default{
     background-color: #001f5b;
-    border-color: #001f5b;    
+    border-color: #001f5b;
 }
 
 .nav.navbar-nav.navbar-center li a {
     color: white;
-    font-family: TradeGothic;      
+    font-family: TradeGothic;
 }
 
 .nav.navbar-nav.navbar-center li a:hover {
-    color: black;  
-    background-color: #CCC; 
+    color: black;
+    background-color: #CCC;
 }
 
 .navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
+    text-align: center;
 }
 
 .image-fixed {
-  max-width: 600px;
-  width: auto;
+    max-width: 600px;
+    width: auto;
 }
 
 .image-fixed-r2w {
-  max-width: 200px;   
-  width: 100%;
+    max-width: 200px;
+    width: 100%;
 }
 
 .navbar-default .navbar-toggle {
-  float: left;
-  margin-left: 10px;
-  border-color: white;
+    float: left;
+    margin-left: 10px;
+    border-color: white;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+    background-color: white;
 }
 
- p {
-  font-size: 150%;
- }
+p {
+    font-size: 150%;
+}
 
-.blue-focus {
-  color: #0039A7;
-  font-weight: bold;
-  font-size: 150%;
+.bullet-weight {
+    font-weight: lighter;
+}
+
+.blue-focus, .blue-focus p {
+    color: #0039A7;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.blue-focus p {
+    color: #0039A7;
+    font-weight: bold;
+    font-size: 100%;
 }
 
 .blue-bullets {
-  color: #0039A7;  
-  font-size: 150%;
+    color: #0039A7;
+    font-size: 150%;    
 }
 
 .blue-text {
-  color: #0039A7;
+    color: #0039A7;
 }
 
 /*Center Ready to Win text in header*/
@@ -133,139 +143,145 @@ html, body {
 }
 
 .navbar-default .navbar-brand {
-  color: white;
+    color: white;
 }
 
 .navbar-default .navbar-brand:hover {
-  color: white;
+    color: white;
 }
 
 .navbar-default .navbar-brand:visited {
-  color: white;
+    color: white;
+}
+
+.arrow-bullet ul {
+    padding: 0;
+    list-style: none;
+}
+
+.arrow-bullet ul li:before {
+    content: "❯      ";
 }
 
 #home {
-  background: url(../images/parallax1.png) no-repeat center center fixed;
-  display: table;
-  height: 800px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 1000;
+    background: url(../images/parallax1.png) no-repeat center center fixed;    
+    display: table;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1000;
 }
 
 #home .panel {
-  opacity: 0.85;
+    opacity: 0.85;
 }
 
 #simplify {
-  background: url(../images/parallax2.png) no-repeat center center fixed;
-  display: table;
-  height: 600px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 1000;
+    background: url(../images/parallax2.png) no-repeat center center fixed; 
+    display: table;   
+    height: 600px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1000;
 }
 #simplify .panel {
-  opacity: 0.85;
+    opacity: 0.85;
 }
 
 #enable {
-  background: url(../images/parallax3.png) no-repeat center center fixed;
-  display: table;
-  height: 600px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 1000;
+    background: url(../images/parallax3.png) no-repeat center center fixed;   
+    display: table;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1000;
 }
 #enable .panel {
-  opacity: 0.85;
+    opacity: 0.85;
 }
 
 #leverage {
-  background: url(../images/parallax4.png) no-repeat center center fixed;
-  display: table;
-  height: 600px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 1000;
+    background: url(../images/parallax4.png) no-repeat center center fixed;    
+    display: table;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1000;
 }
 #leverage .panel {
-  opacity: 0.85;
+    opacity: 0.85;
 }
 
 #resource {
-  background: url(../images/parallax5.png) no-repeat center center fixed;
-  display: table;
-  height: 600px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 1000;
+    background: url(../images/parallax5.png) no-repeat center center fixed;    
+    display: table;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1000;
 }
 #resource .panel {
-  opacity: 0.85;
+    opacity: 0.85;
 }
 
 footer {
-  /*padding: 20px 0;*/
-  padding-bottom: 25px;
-  background-color: #001f5b;
-  opacity: 0.9;
+    /*padding: 20px 0;*/
+    padding-bottom: 25px;
+    background-color: #001f5b;
+    opacity: 0.9;
 
 }
 
 footer a {
-  color: white;
+    color: white;
 }
 
 footer a:visited {
-  color: white;
+    color: white;
 }
 
 footer a:hover {
-  color: white;
+    color: white;
 }
 
 footer a:active {
-  color: white;
+    color: white;
 }
 
 
 /*Border code to display dashed lines*/
 .border-container {
-  /*position: relative;*/
-  height: 5px;
+    height: 5px;
 }
 .border-container .line {
-  /*position: absolute;*/
-  /*top: 205px;*/
-  /*left: 0;*/
-  width: 100%;
-  height: 35%;
-  background-image: linear-gradient(to right, transparent 50%, #0039A7 50%);
-  background-size: 20px 100%;  
+    /*position: absolute;*/
+    /*top: 205px;*/
+    /*left: 0;*/
+    width: 100%;
+    height: 35%;
+    background-image: linear-gradient(to right, transparent 50%, #0039A7 50%);
+    background-size: 20px 100%;
 }
-
-
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
@@ -274,11 +290,12 @@ footer a:active {
     }
 }
 
-#floating-buttons { 
-  padding-left: 25px;  
-  position: fixed; 
-  top: 40%; 
-  z-index: 999;
+/***** hover on top of the page when displayed  *****/
+#floating-buttons {
+    padding-left: 20px;
+    position: fixed;
+    padding-top: 72px;
+    z-index: 999;
 }
 
 /****************** Added by GSM1 Song  ***********************/
@@ -338,6 +355,7 @@ h3 {
 }
 .nav li a:hover {
     color: #001f5b!important;
+    font-weight: bold !important;
 }
 .nav li{
     border: none;
@@ -354,20 +372,21 @@ h3 {
 .navbar-default .navbar-nav>li>a, .navbar-header a {
     color: #fff;
     font: 16px "TradeGothic", Arial, sans-serif;
-    padding: 15px 20px;
+    padding: 15px 18px;
 }
 .navbar-brand a {
     color: #fff !important;
 }
 .btn {
     max-width:200px;
-    min-width: 160px;
+    min-width: 25px;
     width:100%;
     opacity: 0.60;
     background: #2f4a53;
     color: #fff;
     margin-bottom: 10px;
-    border-width: 2px
+    border-width: 2px;
+    letter-spacing: 2px;
 }
 .btn:hover {
     background: #001f5b;
@@ -461,7 +480,7 @@ h3 {
     }
 
 .button-custom {
-  margin-bottom: 10px;
-  max-width: 150px;
-  width:100%;
+    margin-bottom: 10px;
+    max-width: 150px;
+    width:100%;
 }

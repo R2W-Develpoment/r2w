@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+
+    // Keep menu button's background color
+    $(".navbar-toggle").css("background-color","transparent");
+
     // For "Ready to Win"" title in the mobile view and I had to use jquery css to overwrite styling
     $(".navbar-brand").css({
         "color": "#fff",
@@ -6,8 +10,8 @@ $( document ).ready(function() {
         "line-height": "24px"
     });
 
-    // Brings back to the top of the page when to the top link is clicked
-    $('#toTheTop').click(function(){
+    // Brings back to the top of the page when to the top link or Ready To Win is clicked
+    $('#toTheTop, .navbar-brand').click(function(){
         jQuery('html, body').animate({scrollTop: '0px'}, 1000);
         return false;
     });
@@ -22,7 +26,7 @@ $( document ).ready(function() {
         var currentHeight = $(window).scrollTop();
 
         /* once scrolled down enough, display side buttons and hide them when scrolled up using z-index */
-        if(currentHeight > 480) {
+        if(currentHeight > 600) {
             $("#floating-buttons").css("display","block");
             $("#floating-buttons").css("z-index","9999999");
         }else {
